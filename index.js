@@ -20,7 +20,12 @@ $(function(){
     $("#start").click(function(){
         //get text and split it to words inside an array
         //\s matches spaces, tabs, new lines, etc and + means one or more.
-        myArray = $("#userInput").val().split(/\s+/);
+
+        // this gives word by word reading.
+        // myArray = $("#userInput").val().split(/\s+/);
+        
+        // this enables us to read sentence by senence.
+        myArray = $("#userInput").val().split('.');
         
         //get the number of words
         inputLength = myArray.length;
@@ -170,9 +175,7 @@ $("#progressslider").on("slidestop", function(event,ui){
             //change text of percentage
             $("#percentage").text(Math.floor(counter/(inputLength-1)*100));
         }
-        
-        
-        
+       
     }
     
 });
