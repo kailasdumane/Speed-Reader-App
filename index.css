@@ -7,9 +7,17 @@
     background-size: 100% 100%;
     color: #fff;
     text-align: center;
-    font-family: Lobster, serif;
+    /* font-family: Lobster, serif; */
+    font-family: 'Times New Roman', Times, serif ;
 }
 
+.header p{
+    font-size: 20px;
+}
+
+#inputs button{
+    font-size: 20px;
+}
 /*error message*/
 #error{
     background-color: #D87777;
